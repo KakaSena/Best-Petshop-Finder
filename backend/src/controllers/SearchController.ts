@@ -1,21 +1,56 @@
-import {Request, Response} from 'express'
+import { Request, Response } from 'express'
 
+let petshops: Petshop[] = require('../data/petshop');
+interface CheapestPetShop{
+    name: string,
+    total: number,
+    distance: number
+}
 
-export default class SearchController{
+interface Petshop{
+    name:string,
+    weekday: {big:number, small:number},
+    weekend: {big:number, small:number},
+    distance: number
+}
 
-   search(request: Request, response: Response){
-        
-    let numSmallDogs = request.query.numSmallDogs;
-    let numBigDogs = request.query.numBigDogs;
-    let date = request.query.date;
+export default class SearchController {
 
+    search(request: Request, response: Response) {
 
+        const smallDogs  =  parseInt(request.query.numSmallDogs as string);
+        const bigDogs = parseInt(request.query.numBigDogs as string);
+        const day = new Date(request.query.date as string);
 
-        return response.send('helloooo'); 
+        const cheapestpetshop = SearchController.bestpetshop(smallDogs,bigDogs,day)
+
+        return response.send(cheapestpetshop);
+
     }
 
-    bestpetShop(){
-        
-    };
+    static bestpetshop(smallDogs: number, bigDogs: number, day: Date):CheapestPetShop {
 
+        let cheapestPetshopAndTotal: CheapestPetShop = null;
+
+        for (const petshop of petshops) {
+            const dayValues = (day.getDay() === 0 || day.getDay() === 6 ? petshop.weekend : petshop.weekday)
+            console.log(day);
+            console.log("dayValues", dayValues);
+
+            console.log("smalldogs", smallDogs)
+            console.log("bigdogs", bigDogs)
+            const total = (dayValues.big * bigDogs + dayValues.small * smallDogs);
+
+            if (cheapestPetshopAndTotal === null || total < cheapestPetshopAndTotal.total || (total === cheapestPetshopAndTotal.total && petshop.distance < cheapestPetshopAndTotal.distance)){
+                cheapestPetshopAndTotal = {
+                    name: petshop.name,
+                    total: total,
+                    distance: petshop.distance
+                }
+
+                console.log(cheapestPetshopAndTotal);
+            }
+        }
+        return cheapestPetshopAndTotal;
+    }
 }

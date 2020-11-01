@@ -1,39 +1,39 @@
 [
     {
-      "nome": "Meu Canino Feliz",
+      "name": "Meu Canino Feliz",
       "weekday": {
-        "pequeno": 20,
-        "grande": 40
+        "small": 20,
+        "big": 40
       },
       "weekend": {
-        "pequeno": 24,
-        "grande": 48
+        "small": 24,
+        "big": 48
       },
       "distance": 2000
     },
 
     {
-      "nome": "Vai Rex",
+      "name": "Vai Rex",
       "weekday": {
-        "pequeno": 15,
-        "grande": 50
+        "small": 15,
+        "big": 50
       },
       "weekend": {
-        "pequeno": 20,
-        "grande": 55
+        "small": 20,
+        "big": 55
       },
       "distance": 1700
     },
 
     {
-        "nome": "ChowChawgas",
+        "name": "ChowChawgas",
         "weekday": {
-          "pequeno": 30,
-          "grande": 45
+          "small": 30,
+          "big": 45
         },
         "weekend": {
-          "pequeno": 30,
-          "grande": 45
+          "small": 30,
+          "big": 45
         },
         "distance": 800
       }

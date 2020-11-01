@@ -1,40 +1,40 @@
 [
     {
-      "nome": "petshop1",
+      "nome": "Meu Canino Feliz",
       "weekday": {
-        "pequeno": 213,
-        "grande": 1232
+        "pequeno": 20,
+        "grande": 40
       },
       "weekend": {
-        "pequeno": 213,
-        "grande": 1232
+        "pequeno": 24,
+        "grande": 48
       },
-      "distance": 5
+      "distance": 2000
     },
 
     {
-      "nome": "petshop1",
+      "nome": "Vai Rex",
       "weekday": {
-        "pequeno": 213,
-        "grande": 1232
+        "pequeno": 15,
+        "grande": 50
       },
       "weekend": {
-        "pequeno": 213,
-        "grande": 1232
+        "pequeno": 20,
+        "grande": 55
       },
-      "distance": 5
+      "distance": 1700
     },
 
     {
-        "nome": "petshop1",
+        "nome": "ChowChawgas",
         "weekday": {
-          "pequeno": 213,
-          "grande": 1232
+          "pequeno": 30,
+          "grande": 45
         },
         "weekend": {
-          "pequeno": 213,
-          "grande": 1232
+          "pequeno": 30,
+          "grande": 45
         },
-        "distance": 5
+        "distance": 800
       }
   ]

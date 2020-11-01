@@ -17,10 +17,6 @@ function Results(){
         <main>
         
 
-                <footer>
-                   
-                </footer> 
-
         </main>
 
         </div>

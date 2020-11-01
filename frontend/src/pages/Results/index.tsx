@@ -1,10 +1,6 @@
 import React from 'react';
 
-
-
 import './styles.css'
-
-
   interface CheapestPetShop{
     name: string,
     total: number,
@@ -18,7 +14,7 @@ interface ResultsProps {
 const Results: React.FC<ResultsProps> = ({result}) => {
 
     return(
-        <main>
+        <main className="result">
             O Petshop <strong>{result?.name}</strong> é a sua melhor escolha com preço de banho total de <strong>R${result?.total} reais.</strong>
         </main>
     )

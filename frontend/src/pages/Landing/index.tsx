@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import logoImg from '../../assets/images/logo.svg';
+import logoImg from '../../assets/images/logo.png';
 import searchIcon from '../../assets/images/icons/search.svg';
 
 import './styles.css';
@@ -14,7 +14,7 @@ function Landing() {
                 
                 <div className="logo-container">
                     <img src={logoImg} alt="PetShop Finder"/>
-                    <h2>Sua plataforma de busca de petshops online</h2>
+                    <h2>Sua plataforma online de busca por petshops</h2>
                 </div>
 
                 <div className="buttons-container">

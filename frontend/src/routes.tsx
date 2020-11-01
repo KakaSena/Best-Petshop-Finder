@@ -8,7 +8,7 @@ function Routes(){
     return(
         <BrowserRouter>
             <Route path="/" exact component={Landing} />
-            <Route path="/SearchList" component={SearchForm} />
+            <Route path="/SearchForm" component={SearchForm} />
             <Route path="/Results" component={Results} />
         </BrowserRouter>
     )

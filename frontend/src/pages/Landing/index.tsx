@@ -11,7 +11,7 @@ function Landing() {
     return (
         <div id="page-landing">
             <div id="page-landing-content" className="container">
-                
+            
                 <div className="logo-container">
                     <img src={logoImg} alt="PetShop Finder"/>
                     <h2>Sua plataforma online de busca por petshops</h2>

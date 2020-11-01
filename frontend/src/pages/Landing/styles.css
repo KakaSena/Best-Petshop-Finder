@@ -33,7 +33,7 @@
 }
 
 .buttons-container a{
-    width: 30rem;
+    width: 100rem;
     height: 10.4rem;
     border-radius: 0.8rem;
     margin-right: 1.6rem;
@@ -50,7 +50,7 @@
 }
 
 .buttons-container a img{
-    width: 4rem;
+    width: 3rem;
 }
 
 .buttons-container a.search{
@@ -76,30 +76,31 @@
             "logo logo"
             "buttons buttons buttons";
     }
+    
+    .logo-container{
+        grid-area: logo;
+        align-self: center;
+        text-align: center;
+        margin: 0;
+    }
+     
+    .logo-container h2 {
+        text-align: start;
+        font-size: 3.04rem;
+    }
+    
+    .logo-container img {
+        height: 100%;
+    }
+    
+    
+    .buttons-container { 
+        grid-area: buttons;
+        justify-content: flex-start;
+    }
+    
+    .buttons-container a{
+       font-size: 2.4rem;
+    }
 }
 
-.logo-container{
-    grid-area: logo;
-    align-self: center;
-    text-align: left;
-    margin: 0;
-}
- 
-.logo-container h2 {
-    text-align: initial;
-    font-size: 3.6rem;
-}
-
-.logo-container img {
-    height: 100%;
-}
-
-
-.buttons-container { 
-    grid-area: buttons;
-    justify-content: flex-start;
-}
-
-.buttons-container a{
-   font-size: 2.4rem;
-}

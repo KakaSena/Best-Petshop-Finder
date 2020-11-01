@@ -3,15 +3,47 @@
     Best Petshop Finder
 </h1>
 
-## 📍   Instruções para execução
----
-## 💻   Projeto
----
-
-### **Desafio**
+# Descrição do Projeto
 A plataforma pesquisa pelo menor preço de banho entre três petshops, dado quantidade da cachorros grandes e pequenos da pessoa. Em caso de empate de valores, o melhor petshop será aquele de menor distância. Os preços do banho pode varias de acordo com o dia da semana.
 
+## Pré-requisitos
 
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+
+- [Git](https://git-scm.com) 
+- [Node.js](https://nodejs.org/en/) (v10+).
+
+Além disto é bom ter um editor para abrir o código
+- [VSCode](https://code.visualstudio.com/)
+
+
+
+
+## 📍   Instruções para execução
+
+Primeiro clone o repositório com 
+```bash
+$ git clone <https://github.com/KakaSena/Best-Petshop-Finder>
+```
+
+Execute o comando abaixo no terminal
+
+```bash
+npm run dev
+```
+
+O comando acima irá instalar todas dependências do backend e do frontend, após um tempo, a aplicação vai abrir em seu navegador. Caso isso nao aconteça, digite em seu navegador a url
+
+```bash
+http://localhost:3000/
+```
+
+Com a aplicação rodando basta fazer as pesquisas desejadas.
+
+Para parar a aplicação basta em seu terminal apertar ```bashctrl+c```
+
+## 💻   Projeto
+---
 ### **Frontend**
 Uma tela inicial simples para receber o usuário e informar sobre o que a plataforma faz.
 A próxima tela, o usuário deve prover os dados pedidos para assim ter a resposta desejada.

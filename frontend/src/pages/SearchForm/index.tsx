@@ -30,7 +30,7 @@ function SearchForm() {
         });
         setResult(response.data);
     }
-    const isEnabled = numSmallDogs.length > 0 && numBigDogs.length > 0;
+    const isEnabled = numSmallDogs.length > 0 && numBigDogs.length > 0 && date.length >0;
     return (
         <div id="page-search-list" className="container">
             <PageHeader

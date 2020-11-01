@@ -1,25 +1,13 @@
 {
   "scripts": {
+    "install-back": "cd backend && npm i",
+    "intall-front": "cd frontend && npm i",
+    "install-all": "concurrently \"npm run install-back\" \"npm run intall-front\"",
     "server": "cd backend && npm start",
     "client": "cd frontend && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^5.3.0"
-  },
-  "name": "best-petshop-finder",
-  "description": "<h1 align=\"center\">\r     Best Petshop Finder\r </h1>",
-  "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KakaSena/Best-Petshop-Finder.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KakaSena/Best-Petshop-Finder/issues"
-  },
-  "homepage": "https://github.com/KakaSena/Best-Petshop-Finder#readme"
+  }
 }

@@ -1,25 +1,26 @@
 import React from 'react';
 
-import PageHeader from '../../components/PageHeader';
 
 
 import './styles.css'
 
-function Results(){
+
+  interface CheapestPetShop{
+    name: string,
+    total: number,
+    distance: number
+}
+
+interface ResultsProps {
+    result?: CheapestPetShop;
+  }
+
+const Results: React.FC<ResultsProps> = ({result}) => {
 
     return(
-        <div id="page-search-list" className="container">
-            <PageHeader 
-                title = "Petshop escolhido"
-                description = "Melhor custo benefício de acordo com distância e quantidade de animais" 
-            />  
-
         <main>
-        
-
+            O Petshop <strong>{result?.name}</strong> é a sua melhor escolha com preço de banho total de <strong>R${result?.total} reais.</strong>
         </main>
-
-        </div>
     )
 }
 

@@ -60,14 +60,14 @@
     color: var(--color-text-complement);
   }
   
-  #page-search-list main footer {
+  #page-search-list main section {
     padding: 4rem 2.4rem;
-    background: var(--color-box-footer);
+    background: var(--color-box-section);
     border-top: 1px solid var(--color-line-in-white);
     margin-top: 6.4rem;
   }
   
-  #page-search-list main footer p {
+  #page-search-list main section p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,11 +76,11 @@
     color: var(--color-text-complement);
   }
   
-  #page-search-list main footer p img {
+  #page-search-list main section p img {
     margin-right: 2rem;
   }
   
-  #page-search-list main footer button {
+  #page-search-list main section button {
     width: 100%;
     height: 5.6rem;
     background: var(--color-secondary);
@@ -97,7 +97,7 @@
     margin-top: 3.2rem;
   }
   
-  #page-search-list main footer button:hover {
+  #page-search-list main section button:hover {
     background: var(--color-secondary-dark);
   }
   
@@ -114,18 +114,18 @@
       padding: 0 6.4rem;
     }
   
-    #page-search-list main footer {
+    #page-search-list main section {
       padding: 4.0rem 6.4rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
   
-    #page-search-list main footer p {
+    #page-search-list main section p {
       justify-content: space-between;
     }
   
-    #page-search-list main footer button {
+    #page-search-list main section button {
       width: 20rem;
       margin-top: 0;
     }

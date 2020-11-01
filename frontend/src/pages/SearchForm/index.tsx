@@ -2,6 +2,7 @@ import React, { Component, FormEvent, useState } from 'react';
 
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
+import Results from '../Results';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
 
@@ -15,7 +16,7 @@ function SearchForm() {
     const [numSmallDogs, setSmallDog] = useState('');
     const [numBigDogs, setBigDog] = useState('');
     const [date, setDate] = useState('');
-    const [result, setResult] = useState([]);
+    const [result, setResult] = useState(undefined);
 
     async function searchPetshop(e: FormEvent) {
         e.preventDefault();
@@ -23,7 +24,8 @@ function SearchForm() {
         const response = await api.get('search', {
             params: {
                 numSmallDogs,
-                numBigDogs
+                numBigDogs,
+                date
             }
         });
         setResult(response.data);
@@ -52,7 +54,8 @@ function SearchForm() {
                         <Input
                             name="numSmallDogs"
                             label="Número de cachorros pequenos"
-                            type="text"
+                            type="number"
+                            min={0}
                             value={numSmallDogs}
                             onChange={(e) => { setSmallDog(e.target.value) }}
                         />
@@ -60,25 +63,30 @@ function SearchForm() {
                         <Input
                             name="numBigDogs"
                             label="Número de cachorros grandes"
-                            type="text"
+                            type="number"
+                            min={0}
                             value={numBigDogs}
                             onChange={(e) => { setBigDog(e.target.value) }}
                         />
 
                     </fieldset>
 
-                    <footer>
+                    <section>
                         <p>
                             <img src={warningIcon} alt="Aviso importante" />
                             Importante! <br />
                         Preencha todos os dados
                     </p>
-                        <Link to="/Results" className="search">
-                            Iniciar Pesquisa
-                        </Link>
 
-                    </footer>
+                        <button >
+                            Iniciar Pesquisa
+                       </button>
+        
+                    </section>
                 </form>
+
+                {result ? <Results result={result} /> : <></>}
+                
             </main>
 
         </div>

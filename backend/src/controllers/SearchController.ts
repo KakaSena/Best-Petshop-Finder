@@ -23,7 +23,7 @@ export default class SearchController {
         const day = new Date(request.query.date as string);
 
         const cheapestpetshop = SearchController.bestpetshop(smallDogs,bigDogs,day)
-
+        console.log(cheapestpetshop);
         return response.send(cheapestpetshop);
 
     }
@@ -33,12 +33,8 @@ export default class SearchController {
         let cheapestPetshopAndTotal: CheapestPetShop = null;
 
         for (const petshop of petshops) {
-            const dayValues = (day.getDay() === 0 || day.getDay() === 6 ? petshop.weekend : petshop.weekday)
-            console.log(day);
-            console.log("dayValues", dayValues);
 
-            console.log("smalldogs", smallDogs)
-            console.log("bigdogs", bigDogs)
+            const dayValues = (day.getDay() === 0 || day.getDay() === 6 ? petshop.weekend : petshop.weekday)
             const total = (dayValues.big * bigDogs + dayValues.small * smallDogs);
 
             if (cheapestPetshopAndTotal === null || total < cheapestPetshopAndTotal.total || (total === cheapestPetshopAndTotal.total && petshop.distance < cheapestPetshopAndTotal.distance)){
@@ -47,8 +43,6 @@ export default class SearchController {
                     total: total,
                     distance: petshop.distance
                 }
-
-                console.log(cheapestPetshopAndTotal);
             }
         }
         return cheapestPetshopAndTotal;

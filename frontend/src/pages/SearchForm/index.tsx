@@ -30,7 +30,7 @@ function SearchForm() {
         });
         setResult(response.data);
     }
-
+    const isEnabled = numSmallDogs.length > 0 && numBigDogs.length > 0;
     return (
         <div id="page-search-list" className="container">
             <PageHeader
@@ -45,7 +45,7 @@ function SearchForm() {
 
                         <Input
                             name="Data"
-                            label="Escolha sua data"
+                            label="Escolha a data do banho"
                             type="date"
                             value={date}
                             onChange={(e) => { setDate(e.target.value) }}
@@ -78,7 +78,7 @@ function SearchForm() {
                         Preencha todos os dados
                     </p>
 
-                        <button >
+                        <button disabled ={!isEnabled}>
                             Iniciar Pesquisa
                        </button>
         

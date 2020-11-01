@@ -18,7 +18,7 @@ function Landing() {
                 </div>
 
                 <div className="buttons-container">
-                    <Link to="/SearchList" className = "search"> 
+                    <Link to="/SearchForm" className = "search"> 
                         <img src={searchIcon} alt="Pesquisar Petshops"/>
                         Iniciar Pesquisa
                      </Link>

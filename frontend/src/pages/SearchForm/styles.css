@@ -114,16 +114,6 @@
       padding: 0 6.4rem;
     }
   
-    #page-search-list main .schedule-item {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      column-gap: 1.6rem;
-    }
-  
-    #page-search-list main .schedule-item .input-block {
-      margin-top: 0 !important;
-    }
-  
     #page-search-list main footer {
       padding: 4.0rem 6.4rem;
       display: flex;

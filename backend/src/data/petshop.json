@@ -1,0 +1,40 @@
+[
+    {
+      "nome": "petshop1",
+      "weekday": {
+        "pequeno": 213,
+        "grande": 1232
+      },
+      "weekend": {
+        "pequeno": 213,
+        "grande": 1232
+      },
+      "distance": 5
+    },
+
+    {
+      "nome": "petshop1",
+      "weekday": {
+        "pequeno": 213,
+        "grande": 1232
+      },
+      "weekend": {
+        "pequeno": 213,
+        "grande": 1232
+      },
+      "distance": 5
+    },
+
+    {
+        "nome": "petshop1",
+        "weekday": {
+          "pequeno": 213,
+          "grande": 1232
+        },
+        "weekend": {
+          "pequeno": 213,
+          "grande": 1232
+        },
+        "distance": 5
+      }
+  ]

@@ -18,13 +18,12 @@
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;
     --color-box-base: #FFFFFF;
-    --color-box-section: #FAFAFC;
+    --color-box-: #FAFAFC;
   }
   
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
   html, body, #root {

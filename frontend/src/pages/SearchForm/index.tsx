@@ -79,7 +79,7 @@ function SearchForm() {
                     </p>
 
                         <button disabled ={!isEnabled}>
-                            Iniciar Pesquisa
+                            Resultado
                        </button>
         
                     </section>

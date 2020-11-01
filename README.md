@@ -7,8 +7,11 @@
 ---
 ## 💻   Projeto
 ---
+A plataforma pesquisa pelo menor preço de banho entre três petshops, dado quantidade da cachorros grandes e pequenos da pessoa.
 
-Criei uma tela de landing para quando usuario que acesse a aplicação e a tela aonde será efetuado a pesquisa do menor preço de banho no petshop.
+O usuário é recebido por uma tela landing e tem a possibilidade de ir para a tela da aplicação (aonde será efetuado a pesquisa do menor preço de banho no petshop) ao apertar o botão de inicio de pesquisa
+
+A escolha do dia do banho é dado por um calendário no formato americano (mes-dia-ano)
 
 
 ## 🚀   Tecnologias

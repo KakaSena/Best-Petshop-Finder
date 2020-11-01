@@ -23,7 +23,6 @@ export default class SearchController {
         const day = new Date(request.query.date as string);
 
         const cheapestpetshop = SearchController.bestpetshop(smallDogs,bigDogs,day)
-        console.log("o mais barato eh",cheapestpetshop);
         return response.send(cheapestpetshop);
 
     }
@@ -36,9 +35,6 @@ export default class SearchController {
 
             const dayValues = (day.getDay() === 0 || day.getDay() === 6 ? petshop.weekend : petshop.weekday)
             const total = (dayValues.big * bigDogs + dayValues.small * smallDogs);
-            console.log("valores do dia ---->", dayValues)
-            console.log("total a pagar ---->", total)
-            console.log("dia pego ---->",day)
 
             if (cheapestPetshopAndTotal === null || total < cheapestPetshopAndTotal.total || (total === cheapestPetshopAndTotal.total && petshop.distance < cheapestPetshopAndTotal.distance)){
                 cheapestPetshopAndTotal = {

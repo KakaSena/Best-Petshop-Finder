@@ -35,7 +35,7 @@ function SearchForm() {
         <div id="page-search-list" className="container">
             <PageHeader
                 title="Escolha o melhor petshop para você"
-                description="Insira os dados pedidos abaixo"
+                description="Insira os dados abaixo"
             />
 
             <main>

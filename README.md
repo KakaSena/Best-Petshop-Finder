@@ -32,14 +32,13 @@ Execute o comando abaixo no terminal:
 npm i
 ```
 
-Execute o comando abaixo no terminal:
+Após isso, execute o comando abaixo no terminal:
 
 ```bash
-npm run instal-all
+npm run install-all
 ```
 
 Aguarde a instalação e execute o comando abaixo:
-
 
 ```bash
 npm run dev

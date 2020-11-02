@@ -23,7 +23,7 @@ Além disso é bom ter um editor para abrir o código:
 
 Primeiro clone o repositório com (ou baixe zip pelo mesmo link):
 ```bash
-$ git clone <https://github.com/KakaSena/Best-Petshop-Finder>
+$ git clone https://github.com/KakaSena/Best-Petshop-Finder
 ```
 
 Execute o comando abaixo no terminal:
@@ -64,13 +64,13 @@ O calendário está no formato americano (mm-dd-yyyy)
 
 É assumido premissas básicas como: 
 
-* O usuário **deve** informar os números de cachorros para efetuar a pesquisa
+* O usuário **deve** informar os números de cachorros e a data do banho, para efetuar a pesquisa.
 * O número de cachorros **não** pode ser negativo.
 
 O código garante que tais premissas serão cumpridas.
 
 ### **Backend**
-O backend é composto por um endpoint _/search_ responsável pela lógica da pesquisa do menor preço. Dado a data, o número de cachorros pequenos e grandes, o método de _bestpetshop_ itera sob um json de petshops e calcula os preços, logo após compara qual o menor preço (considerando em casos de empate a menor distância)
+O backend é composto por um endpoint _/search_ responsável pela pesquisa do menor preço. Dado a data, o número de cachorros pequenos e grandes, o método de _bestpetshop_ itera sob um json de petshops (pegandos os preços correspondentes a data escolhia) e calcula os preços. Logo após, compara qual o menor preço (considerando em casos de empate a menor distância) e retornar para o usuário qual o melhor petshop e o preço total dos banhos.
 
 Com a lógica acima, podemos facilmente aumentar o número de lojas (pelo json) sem necessidade de alterar o método _bestpetshop_.
 
